@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmFinalOrderActivity">
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please write your Shipment Details"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="25dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/shippment_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your Name"
+
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/shippment_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shippment_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your Phone Number"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+
+    <Button
+        android:id="@+id/UserLocation"
+        android:layout_width="369dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/shippment_phone_number"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/colorSecondaryVariant"
+        android:text="Get Your Location"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@id/UserLocation">
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Address:"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="City:"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/Country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Country:"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/lagitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserLocation"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Lagitude:"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/Longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserLocation"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Longitude:"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm_final_order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/colorSecondaryVariant"
+        android:text="Confirm"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+</RelativeLayout>

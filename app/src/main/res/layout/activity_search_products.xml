@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchProductsActivity">
+
+    <RelativeLayout
+        android:id="@+id/r5"
+        android:layout_width="404dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/input_design">
+
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ic_search"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+
+            android:id="@+id/search_product_name"
+            android:layout_width="214dp"
+            android:layout_height="43dp"
+            android:layout_alignStart="@+id/searchBtn"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="7dp"
+            android:autofillHints=""
+            android:hint="Product Name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="9dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="ExtraText,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/voice_search_img"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="-5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/search_product_name"
+            android:layout_toRightOf="@+id/search_product_name"
+            android:background="@color/cardview_shadow_end_color"
+            android:src="@drawable/ic_baseline_keyboard_voice_24" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="54dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="-13dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="100dp"
+            android:layout_toEndOf="@+id/voice_search_img"
+            android:backgroundTint="@color/colorSecondaryVariant"
+            android:padding="5dp"
+            android:text="bar"
+            android:textColor="@android:color/white"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r5"
+
+        android:layout_marginTop="20dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
